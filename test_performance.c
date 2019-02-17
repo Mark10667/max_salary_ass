@@ -44,6 +44,8 @@ int main(int argc, char **argv) {
     if(naive_max == greedy_max){
       puts("Wow! they are equal!!");
     }
+    free(a);
+    free(digit_arr);
     // free(digit_arr);
     // free(a);
 
