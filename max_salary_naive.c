@@ -64,6 +64,9 @@ void max_salary_naive(int b[], int size, int n){
             SWAP(a[i], a[size-1]);
 		    }
     }
+
+    free(a);
+    free(digit_arr);
 }
 // Code to test permutations
 // int main(){

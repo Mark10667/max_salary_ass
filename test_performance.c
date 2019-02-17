@@ -38,12 +38,12 @@ int main(int argc, char **argv) {
 
     int greedy_max = max_salary_greedy(b, n);
     printf("greedy_max shows max salary is %d\n", greedy_max);
-    
+
     if(naive_max == greedy_max){
       puts("Wow! they are equal!!");
     }
-    free(digit_arr);
-    free(a);
+    // free(digit_arr);
+    // free(a);
 
     // if(argc != 3){
     //   puts("To run: ./test <N> <M>  (N is the number of elements in the array, M is max number of digits for one element. \n)");
