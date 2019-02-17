@@ -28,6 +28,8 @@ void stress_test(int N, int M){
     naive_max = 0;
   }
   free(test_arr);
+  free(a);
+  free(digit_arr);
 }
 int main(int argc, char **argv) {
 
