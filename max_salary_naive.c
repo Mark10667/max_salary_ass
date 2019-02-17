@@ -14,7 +14,7 @@ int calculate_digit(int a[], int n){
   int count = 0;
   int element = 0;
   int total_count = 0; // the total digits
-  digit_arr = malloc(sizeof(int)*(n+1));
+  // digit_arr = malloc(sizeof(int)*(n+1));
   for(int i = 0; i < n; i++){
     element = a[i];
     while(element > 0){
@@ -34,7 +34,7 @@ void max_salary_naive(int b[], int size, int n){
 
     int amount = 0;
     // if size becomes 1 then do something with the obtained permutation
-    a = malloc(sizeof(int)*(n+1));
+    // a = malloc(sizeof(int)*(n+1));
     for(int i = 0; i < n; i++){
       a[i] = b[i];
     }

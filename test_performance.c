@@ -33,8 +33,12 @@ void stress_test(int N, int M){
 }
 int main(int argc, char **argv) {
 
+
+
     int b[] = {19, 20, 17, 15, 1, };
     int n = sizeof b/sizeof b[0];
+    digit_arr = malloc(sizeof(int)*(n+1));
+    a = malloc(sizeof(int)*(n+1));
     max_salary_naive(b, n, n);
     printf("Naive shows max salary is %d\n", naive_max);
 
