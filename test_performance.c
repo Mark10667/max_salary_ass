@@ -31,51 +31,55 @@ void stress_test(int N, int M){
 }
 int main(int argc, char **argv) {
 
-    // int b[] = {19, 20, 17, 15, 1, };
-    // int n = sizeof b/sizeof b[0];
-    // max_salary_naive(b, n, n);
-    // printf("Naive shows max salary is %d\n", naive_max);
-    //
-    // int greedy_max = max_salary_greedy(b, n);
-    // printf("greedy_max shows max salary is %d\n", greedy_max);
-    //
-    // if(naive_max == greedy_max){
-    //   puts("Wow! they are equal!!");
-    // }
+    int b[] = {19, 20, 17, 15, 1, };
+    int n = sizeof b/sizeof b[0];
+    max_salary_naive(b, n, n);
+    printf("Naive shows max salary is %d\n", naive_max);
 
-    if(argc != 3){
-      puts("To run: ./test <N> <M>  (N is the number of elements in the array, M is max number of digits for one element. \n)");
-      return 0;
+    int greedy_max = max_salary_greedy(b, n);
+    printf("greedy_max shows max salary is %d\n", greedy_max);
+    
+    if(naive_max == greedy_max){
+      puts("Wow! they are equal!!");
     }
-
-    int N = atoi(argv[1]);
-    int M = atoi(argv[2]);
-
-    if(N < 0 || M < 0){
-      puts("N and M are positive, no one wants a negative salary :)\n");
-      free(digit_arr);
-      free(a);
-      return 0;
-    }
-
-    int b = M;
-    int digit = 0;
-
-    while(b > 0){
-      b = b / 10;
-      digit++;
-    }
-
-    if(N*digit > 9){
-      puts("This number is too big, please choose a smaller N and M next time :)\n");
-      free(digit_arr);
-      free(a);
-      return 0;
-    }
-
-    stress_test(N, M);
-
     free(digit_arr);
     free(a);
-    return 0;
+
+    // if(argc != 3){
+    //   puts("To run: ./test <N> <M>  (N is the number of elements in the array, M is max number of digits for one element. \n)");
+    //   free(digit_arr);
+    //   free(a);
+    //   return 0;
+    // }
+    //
+    // int N = atoi(argv[1]);
+    // int M = atoi(argv[2]);
+    //
+    // if(N < 0 || M < 0){
+    //   puts("N and M are positive, no one wants a negative salary :)\n");
+    //   free(digit_arr);
+    //   free(a);
+    //   return 0;
+    // }
+    //
+    // int b = M;
+    // int digit = 0;
+    //
+    // while(b > 0){
+    //   b = b / 10;
+    //   digit++;
+    // }
+    //
+    // if(N*digit > 9){
+    //   puts("This number is too big, please choose a smaller N and M next time :)\n");
+    //   free(digit_arr);
+    //   free(a);
+    //   return 0;
+    // }
+    //
+    // stress_test(N, M);
+    //
+    // free(digit_arr);
+    // free(a);
+    // return 0;
 }
