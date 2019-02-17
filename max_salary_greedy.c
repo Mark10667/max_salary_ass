@@ -48,6 +48,5 @@ int max_salary_greedy(int b[], int n){
     sum = sum + greedy[i] * (int)pow(10, total_count);
   }
   free(greedy);
-  free(digit_arr);
   return sum;
 }
