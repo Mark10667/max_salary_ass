@@ -1,4 +1,5 @@
 #include "max_salary.h"
+#include <math.h>
 
 int * digit_arr = NULL;
 int * a = NULL;

@@ -1,4 +1,5 @@
 #include "max_salary.h"
+#include <math.h>
 
 int is_better(const void * best_so_far, const void * current){
 
