@@ -51,11 +51,13 @@ int main(int argc, char **argv) {
     // free(a);
     // free(digit_arr);
 
+    if(argc == 1){
+      puts("To run: ./test 1 <N> <M>  (N is the number of elements in the array, M is max number of digits for one element. \n or ./test 2 <type the numbers here one by one with a blank space between the numbers>\n");
+      return 0;
+    }
     int mode = atoi(argv[1]);
     if(mode != 1 && mode != 2){
       puts("To run: ./test 1 <N> <M>  (N is the number of elements in the array, M is max number of digits for one element. \n or ./test 2 <type the numbers here one by one with a blank space between the numbers>\n");
-      // free(digit_arr);
-      // free(a);
       return 0;
     }
 
