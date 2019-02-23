@@ -13,10 +13,10 @@ int calculate_digit(int a[], int size);
 void max_salary_naive(int a[], int size, int n) ;
 
 int is_better(const void * best_so_far, const void * current);
-int max_salary_greedy(int b[], int n);
+double max_salary_greedy(int b[], int n);
 
 extern int * digit_arr;
 extern int * a;
-extern int naive_max;
+extern double naive_max;
 
 #endif

@@ -32,7 +32,7 @@ int calculate_digit(int a[], int n){
 // Generating permutation using Heap Algorithm
 void max_salary_naive(int b[], int size, int n){
 
-    int amount = 0;
+    double amount = 0;
     // if size becomes 1 then do something with the obtained permutation
     // a = malloc(sizeof(int)*(n+1));
     for(int i = 0; i < n; i++){

@@ -30,3 +30,15 @@ In addition to this 'challenging' task, in this assignment you would need to wri
 The only starter code provided for this assignment is an implementation of the Heap’s algorithm for generating all permutations in an array of integers.
 
 <strong>Please follow the style of the previous 2 programming assignments and use them as a template. It is very important that you learn how to implement algorithms in a consistent way.</strong>
+
+
+
+Instruction:
+test_performance has two test modes.
+To run:
+
+./test 1 <N> <M>  (N is the number of elements in the array, M is the max possible number for every element.
+
+./test 2 <type the array of integers one by one with a blank space between the numbers>
+
+The max digit of the salary in both test modes is 12.
