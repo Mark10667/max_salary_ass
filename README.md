@@ -1,4 +1,14 @@
-# Max Salary
+# My Simple Instruction:
+
+test_performance has two test modes.
+To run:
+
+./test 1 <N> <M>  (N is the number of elements in the array, M is the max possible number for every element.
+
+./test 2 <type the array of integers one by one with a blank space between the numbers>
+
+The max digit of the salary in both test modes is 12.
+
 
 As the last
 question of an interview, your future boss gives you a few pieces of paper
@@ -33,12 +43,4 @@ The only starter code provided for this assignment is an implementation of the H
 
 
 
-Instruction:
-test_performance has two test modes.
-To run:
 
-./test 1 <N> <M>  (N is the number of elements in the array, M is the max possible number for every element.
-
-./test 2 <type the array of integers one by one with a blank space between the numbers>
-
-The max digit of the salary in both test modes is 12.
